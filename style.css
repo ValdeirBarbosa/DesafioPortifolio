@@ -133,27 +133,28 @@ aside ol img {
 
 main {
     border-radius: 20px;
-    padding: 1rem;
+    /* padding: 1rem; */
     flex: 1;
     background-color: rebeccapurple;
     height: auto;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    gap:1rem;
 }
 
 #projects {
-    background-color: red;
+    /* background-color: red; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1rem;
 }
 
-#projects header {
+ header {
  
     flex: 1;
-
+    padding:1rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -163,11 +164,23 @@ main {
 
     flex: 1;
 }
+.card-container{
+    display: flex;
+    padding:1rem;
+
+    
+   border-radius: 24px;
+    gap:1rem
+}
+.project-card,
+.post-card{
+    cursor: pointer;
+}
 
 .project-card {
     padding: 1rem;
     border-radius: 10px;
-    background-color: blanchedalmond;
+    background-color: azure;
 
     display: flex;
     flex-direction: column;
@@ -176,11 +189,13 @@ main {
 
 .project-card .top {
     display: flex;
+
     gap: 1rem;
-    background-color: azure;
+    
 }
 
 .footer-card{
+    margin-top: 1rem;
     display: flex;
     gap:1rem
     
@@ -200,4 +215,59 @@ main {
 
 .footer-card button:nth-child(3){
     flex: 1;
+}
+#posts{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+#posts img{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 100%;
+}
+
+#posts header{
+    
+    height: 4rem;
+    background-color: rebeccapurple;
+    border-radius: 18px;
+   
+}
+
+.post-card{   
+    padding:1rem;
+    display: flex;
+    gap:1rem;
+    border-radius: 18px;
+    background-color: darkslategray;
+   
+}
+
+.card-main{
+   padding:1rem;
+}
+.card-main ol{
+    list-style: none;
+    display: flex;
+    gap:1rem;
+}
+.card-main p{
+    height: 2rem;
+}
+.card-main p:nth-child(3){
+   font-weight: bolder;
+}
+
+.card-main ol li{
+    display: flex;
+    line-height:0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(17, 183, 14);
+   
+}
+.card-main ol li::before{
+    content: "#";
 }
