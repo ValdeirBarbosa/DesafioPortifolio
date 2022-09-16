@@ -1,3 +1,10 @@
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -8,12 +15,16 @@ body {
     flex-direction: row;
     gap: 1rem;
     padding: 1rem;
+    background-color: var(--body-bg-color);
+    color: var(--text-color);
+
 
 }
 
+
 aside {
     padding: 1rem;
-    background-color: red;
+    
     flex-basis: 10%;
 
     display: flex;
@@ -24,9 +35,10 @@ aside {
 
 }
 
-section {
-    background-color: aliceblue;
-    border-radius: 20px;
+ aside section {
+    background-color: var(--bg-cards);
+    box-shadow: 2px 2px 4px;
+    border-radius: 2rem;
     padding: 1rem
 }
 
@@ -36,7 +48,8 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    background-color: var(--bg-cards);
+    border-radius: 2rem;
     width: 348px;
 
 }
@@ -45,27 +58,32 @@ section {
 aside .profile img:nth-child(1) {
     width: 12em;
     height: 12em;
-    border: 2px solid greenyellow;
+    border: 2px solid rgb(187, 190, 183);
     border-radius: 100%;
+    margin-bottom: 1rem;
 }
 
 aside ol {
     display: flex;
     flex-direction: column;
     gap: 0.1rem;
-
-
+    background-color: var(--bg-cards);
+   
     width: 348px;
     padding: 1rem;
+    
+
 
 
 }
 
-aside ol li {
-    line-height: o;
-    display: flex;
 
+
+
+aside ol li {
+    display: flex;
     justify-content: flex-start;
+    height: 2rem;
     gap: 1rem;
 
 
@@ -83,25 +101,33 @@ aside ol img {
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
+    
 
 
 
 
 }
 
-#tech ol li button {
-
-    background-color: yellow;
+#tech ol li  {
+    color:black;
+    font-weight: 800;
+    font-size: 14px;
+    background-color:var(--bg-techs);
     height: 24px;
+    line-height: 24px;
     width: 86px;
-    gap: 1rem;
+    gap: 10px;
     border: none;
     border-radius: 50px;
+    display: flex;
+  
+   
+    justify-content: center;
 }
 
 [id="exp"] ol li:nth-of-type(1),
 [id="exp"] ol li:nth-of-type(4),
-[id="exp"] ol li:nth-of-type(8),
+[id="exp"] ol li:nth-of-type(7),
 [id="exp"] ol li:nth-of-type(10),
 
 [id="educa"] ol li:nth-of-type(1),
@@ -110,13 +136,13 @@ aside ol img {
 [id="educa"] ol li:nth-of-type(10) {
     font-size: large;
     font-weight: bold;
-    background-color: brown;
+   
 }
 
 
 [id="exp"] ol li:nth-of-type(1)::before,
 [id="exp"] ol li:nth-of-type(4)::before,
-[id="exp"] ol li:nth-of-type(8)::before,
+[id="exp"] ol li:nth-of-type(7)::before,
 [id="exp"] ol li:nth-of-type(10)::before,
 
 [id="educa"] ol li:nth-of-type(1)::before,
@@ -135,54 +161,59 @@ main {
     border-radius: 20px;
     /* padding: 1rem; */
     flex: 1;
-    background-color: rebeccapurple;
+
     height: auto;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap:1rem;
-}
-
-#projects {
-    /* background-color: red; */
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     gap: 1rem;
 }
 
+
+
  header {
- 
-    flex: 1;
-    padding:1rem;
+
+
+    padding: 1rem;
     display: flex;
     justify-content: flex-start;
+    background-color: var(--bg-cards);
+    
     align-items: center;
+    height: 6rem;
+    border-radius: 2rem;
 }
 
-#projects header h2:nth-child(1) {
+
+#projects>header h2:nth-child(1) {
 
     flex: 1;
 }
-.card-container{
+
+.card-container {
+    max-width: 100%;
     display: flex;
-    padding:1rem;
+    flex-flow: row wrap;
+    padding: 1rem;
 
     
-   border-radius: 24px;
-    gap:1rem
+    border-radius: 24px;
+    gap: 1rem
 }
+
 .project-card,
-.post-card{
+.post-card {
     cursor: pointer;
+    background-color: var(--bg-cards);
 }
 
 .project-card {
     padding: 1rem;
     border-radius: 10px;
-    background-color: azure;
+    max-width: 46%;
 
     display: flex;
+
     flex-direction: column;
     gap: 1rem;
 }
@@ -191,83 +222,90 @@ main {
     display: flex;
 
     gap: 1rem;
-    
+
 }
 
-.footer-card{
+.footer-card {
     margin-top: 1rem;
     display: flex;
-    gap:1rem
-    
+    gap: 1rem
 }
-.footer-card button{
+
+.footer-card button {
     width: 4rem;
     border-style: none;
     background-color: transparent;
-    
+
     align-items: center;
     justify-content: center;
 }
-.footer-card button img{
+
+.footer-card button img {
     width: 1rem;
     height: 1rem;
 }
 
-.footer-card button:nth-child(3){
+.footer-card button:nth-child(3) {
     flex: 1;
 }
-#posts{
+
+#posts {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 
 }
-#posts img{
+
+#posts img {
     width: 8rem;
     height: 8rem;
     border-radius: 100%;
 }
 
-#posts header{
-    
+#posts header {
+
     height: 4rem;
-    background-color: rebeccapurple;
+    background-color: var(--bg-cards);
     border-radius: 18px;
-   
+
 }
 
-.post-card{   
-    padding:1rem;
+.post-card {
+    padding: 1rem;
     display: flex;
-    gap:1rem;
+    gap: 1rem;
     border-radius: 18px;
-    background-color: darkslategray;
-   
+    background-color: var(--bg-cards);
 }
 
-.card-main{
-   padding:1rem;
+.card-main {
+    padding: 1rem;
+    
 }
-.card-main ol{
+
+.card-main ol {
     list-style: none;
     display: flex;
-    gap:1rem;
-}
-.card-main p{
-    height: 2rem;
-}
-.card-main p:nth-child(3){
-   font-weight: bolder;
+    gap: 1rem;
 }
 
-.card-main ol li{
+.card-main p {
+    height: 2rem;
+}
+
+.card-main p:nth-child(3) {
+    font-weight: bolder;
+}
+
+.card-main ol li {
     display: flex;
-    line-height:0;
+    line-height: 0;
     justify-content: center;
     align-items: center;
-    background-color: rgb(17, 183, 14);
-   
+    
+
 }
-.card-main ol li::before{
+
+.card-main ol li::before {
     content: "#";
 }
