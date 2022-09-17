@@ -3,6 +3,7 @@
     --text-color: #837E9F;
     --bg-cards: #302F3D;
     --bg-techs: #CB92B1;
+    --bd-shadow: #1E1E2a;
   }
 
 * {
@@ -37,7 +38,7 @@ aside {
 
  aside section {
     background-color: var(--bg-cards);
-    box-shadow: 2px 2px 4px;
+    box-shadow: 4px 4px 1px var( --bd-shadow);
     border-radius: 2rem;
     padding: 1rem
 }
@@ -58,7 +59,7 @@ aside {
 aside .profile img:nth-child(1) {
     width: 12em;
     height: 12em;
-    border: 2px solid rgb(187, 190, 183);
+    border: 2px solid var(--bd-shadow);
     border-radius: 100%;
     margin-bottom: 1rem;
 }
@@ -71,13 +72,11 @@ aside ol {
    
     width: 348px;
     padding: 1rem;
-    
-
-
-
 }
 
-
+ section ol:nth-child(1) li{
+   height: 3rem;
+ }
 
 
 aside ol li {
@@ -89,9 +88,17 @@ aside ol li {
 
 }
 
+#aside ol li{
+    height: 3rem;
+}
+
 aside ol img {
     width: 1rem;
     height: 1rem;
+    /* alterar cor do SVG */
+    filter: invert(56%) sepia(29%) saturate(308%) hue-rotate(209deg) brightness(86%) contrast(89%);
+    
+    
 }
 
 #tech ol {
@@ -111,7 +118,7 @@ aside ol img {
 #tech ol li  {
     color:black;
     font-weight: 800;
-    font-size: 14px;
+    font-size: 12px;
     background-color:var(--bg-techs);
     height: 24px;
     line-height: 24px;
@@ -178,7 +185,8 @@ main {
     display: flex;
     justify-content: flex-start;
     background-color: var(--bg-cards);
-    
+    box-shadow: 4px 4px 1px var( --bd-shadow);
+    margin-bottom:1rem;
     align-items: center;
     height: 6rem;
     border-radius: 2rem;
@@ -194,7 +202,7 @@ main {
     max-width: 100%;
     display: flex;
     flex-flow: row wrap;
-    padding: 1rem;
+
 
     
     border-radius: 24px;
@@ -211,13 +219,16 @@ main {
     padding: 1rem;
     border-radius: 10px;
     max-width: 46%;
-
+    
     display: flex;
-
+    
     flex-direction: column;
     gap: 1rem;
 }
 
+.project-card  img{
+    filter: invert(56%) sepia(29%) saturate(308%) hue-rotate(209deg) brightness(86%) contrast(89%);
+}
 .project-card .top {
     display: flex;
 
@@ -226,27 +237,17 @@ main {
 }
 
 .footer-card {
-    margin-top: 1rem;
+    margin-top: auto;
     display: flex;
     gap: 1rem
 }
 
-.footer-card button {
-    width: 4rem;
-    border-style: none;
-    background-color: transparent;
 
-    align-items: center;
-    justify-content: center;
-}
 
-.footer-card button img {
-    width: 1rem;
-    height: 1rem;
-}
 
 .footer-card button:nth-child(3) {
     flex: 1;
+   
 }
 
 #posts {
