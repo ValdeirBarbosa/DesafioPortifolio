@@ -280,9 +280,9 @@ ol li:hover {
 
 
 .footer-card {
-    margin-top: auto;
+    margin-top: 1rem;
     display: flex;
-    height: 4rem;
+    height: 2rem;
     gap: 1rem;
     align-items: center;
     
