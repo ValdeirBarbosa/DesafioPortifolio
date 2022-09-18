@@ -4,8 +4,8 @@
     --bg-cards: #302F3D;
     --bg-techs: #CB92B1;
     --bd-shadow: #1E1E2a;
-    --var-gap:4rem;
-  }
+    --var-gap: 4rem;
+}
 
 * {
     margin: 0;
@@ -25,7 +25,7 @@ body {
 }
 
 
-aside {   
+aside {
     /* flex-basis: 7%; */
     display: flex;
     flex-direction: column;
@@ -35,9 +35,9 @@ aside {
 
 }
 
- aside section {
+aside section {
     background-color: var(--bg-cards);
-    box-shadow: 4px 4px 1px var( --bd-shadow);
+    box-shadow: 4px 4px 1px var(--bd-shadow);
     border-radius: 2rem;
     padding: 1rem
 }
@@ -51,14 +51,14 @@ aside {
     background-color: var(--bg-cards);
     border-radius: 2rem;
     width: 348px;
-    
+
 }
 
 
 aside .profile img:nth-child(1) {
     width: 12em;
     height: 12em;
-   
+
     border: 2px solid rgb(193, 47, 255);
     border-radius: 100%;
     margin-bottom: 1rem;
@@ -68,14 +68,14 @@ aside ol {
     display: flex;
     flex-direction: column;
     gap: 0.1rem;
-    background-color: var(--bg-cards);   
+    background-color: var(--bg-cards);
     width: 348px;
     padding: 1rem;
 }
 
- section ol:nth-child(1) li{
-   height: 3rem;
- }
+section ol:nth-child(1) li {
+    height: 3rem;
+}
 
 
 aside ol li {
@@ -85,7 +85,7 @@ aside ol li {
     gap: 1rem;
 }
 
-#aside ol li{
+#aside ol li {
     height: 3rem;
 }
 
@@ -93,8 +93,8 @@ aside ol img {
     width: 1rem;
     height: 1rem;
     /* alterar cor do SVG */
-    filter: invert(56%) sepia(29%) saturate(308%) hue-rotate(209deg) brightness(86%) contrast(89%);   
-    
+    filter: invert(56%) sepia(29%) saturate(308%) hue-rotate(209deg) brightness(86%) contrast(89%);
+
 }
 
 #tech ol {
@@ -106,18 +106,18 @@ aside ol img {
     justify-content: flex-start;
 }
 
-#tech ol li  {
-    color:black;
+#tech ol li {
+    color: black;
     font-weight: 800;
     font-size: 12px;
-    background-color:var(--bg-techs);
+    background-color: var(--bg-techs);
     height: 24px;
     line-height: 24px;
     width: 86px;
     gap: 10px;
     border: none;
     border-radius: 50px;
-    display: flex;   
+    display: flex;
     justify-content: center;
 }
 
@@ -131,7 +131,7 @@ aside ol img {
 [id="educa"] ol li:nth-of-type(7),
 [id="educa"] ol li:nth-of-type(10) {
     font-size: large;
-    font-weight: bold;   
+    font-weight: bold;
 }
 
 
@@ -155,7 +155,7 @@ aside ol img {
 main {
     border-radius: 20px;
     height: auto;
-    flex:1;
+    flex: 1;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -164,13 +164,13 @@ main {
 
 
 
- header {
-    padding: 0 1rem  0 1rem ;
+header {
+    padding: 0 1rem 0 1rem;
     display: flex;
     justify-content: flex-start;
     background-color: var(--bg-cards);
-    box-shadow: 4px 4px 1px var( --bd-shadow);
-    margin-bottom:1rem;
+    box-shadow: 4px 4px 1px var(--bd-shadow);
+    margin-bottom: 1rem;
     align-items: center;
     height: 4rem;
     border-radius: 1rem;
@@ -182,40 +182,42 @@ main {
     flex: 1;
 }
 
-.card-container {  
+.card-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-   row-gap: 1rem;
-    justify-content:space-between;   
+    row-gap: 1rem;
+    justify-content: space-between;
 }
-.project-card{
+
+.project-card {
     height: auto;
-    width:45%;    
+    width: 45%;
     padding: 1rem;
-    border-radius: 10px;     
-    display: flex;   
+    border-radius: 10px;
+    display: flex;
     flex-direction: column;
     gap: 1rem;
-} 
+}
 
 
 .project-card,
 .post-card,
-ol li{
+ol li {
     cursor: pointer;
     transition: all 2000ms;
 }
+
 .project-card,
 .post-card {
     cursor: pointer;
     background-color: var(--bg-cards);
-    box-shadow: 4px 4px 1px var( --bd-shadow);
+    box-shadow: 4px 4px 1px var(--bd-shadow);
 }
 
 
-.project-card  img{
-    filter: invert(56%) sepia(29%) saturate(308%) hue-rotate(209deg) brightness(86%) contrast(89%);    
+.project-card img {
+    filter: invert(56%) sepia(29%) saturate(308%) hue-rotate(209deg) brightness(86%) contrast(89%);
 }
 
 .project-card .top {
@@ -225,21 +227,21 @@ ol li{
 }
 
 .post-card {
-   
+
     display: flex;
     gap: 1rem;
     border-radius: 18px;
     background-color: var(--bg-cards);
     align-items: center;
-    margin-bottom:1rem;
-    padding-left:1rem;
-  
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+
 }
 
 .card-main {
     padding: 1rem;
-    margin-bottom:1rem; 
-   
+    margin-bottom: 1rem;
+
 }
 
 .card-main ol {
@@ -260,36 +262,41 @@ ol li{
     display: flex;
     line-height: 0;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
 .card-main ol li::before {
     content: "#";
 }
 
-ol li:hover{
-    color:white
+ol li:hover {
+    color: white
 }
-.project-card:hover{
-    box-shadow:  4px 4px 1px var( --text-color);
-    color:rgb(132, 127, 127)    
+
+.project-card:hover {
+    box-shadow: 4px 4px 1px var(--text-color);
+    color: rgb(132, 127, 127)
 }
 
 
 .footer-card {
     margin-top: auto;
-    display: flex;    
+    display: flex;
+    height: 4rem;
     gap: 1rem;
+    align-items: center;
+    
 }
 
 
-.footer-card button{
+.footer-card button {
     background-color: transparent;
     border: none;
-   line-height: 2rem;
-    color:var(--text-color);
+    line-height: 2rem;
+    color: var(--text-color);
     display: flex;
-    gap:1em;
+   
+    gap: 1em;
     justify-content: flex-end;
     justify-self: flex-end;
 }
@@ -303,18 +310,17 @@ ol li:hover{
 #posts {
     display: flex;
     flex-direction: column;
-    
+
 }
 
 #posts img {
     width: 8rem;
     height: 8rem;
     border-radius: 100%;
-    box-shadow: 4px 4px 1px var( --bd-shadow);
+    box-shadow: 4px 4px 1px var(--bd-shadow);
 }
 
 #posts header {
     background-color: var(--bg-cards);
     border-radius: 18px;
 }
-
